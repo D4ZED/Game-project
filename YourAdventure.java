@@ -45,7 +45,8 @@ public class YourAdventure extends JComponent implements MouseListener {
 			g.drawString("Start!", x, y);
 		} else if (state == 2) {
 			g.setColor(Color.RED);
-			g.drawString("WELL THEN WHY ARE YOU PLAYING THIS GAME!?!?!", x, yi); // ENDING 1
+			g.drawString("WELL THEN WHY ARE YOU PLAYING THIS GAME!?!?!", x, yi); // ENDING
+																					// 1
 		} else if (state == 3) {
 			if (eeCounter1 < 3) {
 				g.setColor(Color.BLACK);
@@ -63,7 +64,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 			g.setColor(Color.GREEN);
 			g.drawString("Elf", x, y2);
 			g.setColor(Color.RED);
-			g.drawString("Ork", x, y3);
+			g.drawString("orc", x, y3);
 		} else if (state == 99) {
 			g.setColor(Color.RED);
 			for (int i = 0; i < 42; i++) {
@@ -96,7 +97,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.drawString("Life", x, y2);
 				g.setColor(Color.MAGENTA);
 				g.drawString("Support", x, y3);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("orc")) {
 				g.setColor(Color.GRAY);
 				g.drawString("Resistance", x, y);
 				g.setColor(Color.MAGENTA);
@@ -111,7 +112,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("orc")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("What can i do with my magic?", x, y);
@@ -207,7 +208,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("*Go straight to the tower like a good student*", x, y);
@@ -244,7 +245,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 				}
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("It is a very nice tower.", x, y);
@@ -257,7 +258,8 @@ public class YourAdventure extends JComponent implements MouseListener {
 			g.drawString("*Burn down tower*", x, y2);
 		} else if (state == 14) {
 			g.setColor(Color.RED);
-			g.drawString("*You burned down the tower and died in a blaze of glory!*", x, yi); // ENDING 5
+			g.drawString("*You burned down the tower and died in a blaze of glory!*", x, yi); // ENDING
+																								// 5
 		} else if (state == 15) {
 			g.setColor(Color.BLACK);
 			g.drawString("Thank you, it is a very nice tower indeed.", x, yi);
@@ -265,7 +267,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("So what is my quest?", x, y);
@@ -276,13 +278,14 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("Okay, I can do that", x, y);
 		} else if (state == 17) {
 			g.setColor(Color.RED);
-			g.drawString("You were unable to control your magic and ended up killing yourself.", x, yi); // ENDING 6
+			g.drawString("You were unable to control your magic and ended up killing yourself.", x, yi); // ENDING
+																											// 6
 		} else if (state == 18) {
 			g.setColor(Color.BLACK);
 			g.drawString("Wow, I am impressed at how much you know already!", x, yi);
@@ -290,7 +293,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("Thank you, so am I a real wizard yet?", x, y);
@@ -301,21 +304,104 @@ public class YourAdventure extends JComponent implements MouseListener {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("Ok well just tell me what the quest is already so I can do it!", x, y);
 		} else if (state == 20) {
 			g.setColor(Color.BLACK);
-			g.drawString("Patiance is a virtue. Anyway, I need you to slay a dragon for me and bring back a scale.", x, yi);
+			g.drawString("Patiance is a virtue. Anyway, I need you to slay a dragon for me and bring back a scale.", x,
+					yi);
 			if (race.equals("HUMAN")) {
 				g.setColor(Color.ORANGE);
 			} else if (race.equals("ELF")) {
 				g.setColor(Color.GREEN);
-			} else if (race.equals("ORK")) {
+			} else if (race.equals("ORC")) {
 				g.setColor(Color.RED);
 			}
 			g.drawString("Just a dragon? That is child's play for a prodigy likle myself!", x, y);
+		} else if (state == 21) {
+			g.setColor(Color.BLACK);
+			g.drawString(
+					"Don't get too ahead of yourself, I'm not bailing you out of any situations you get yourself into.",
+					x, yi);
+			if (race.equals("HUMAN")) {
+				g.setColor(Color.ORANGE);
+			} else if (race.equals("ELF")) {
+				g.setColor(Color.GREEN);
+			} else if (race.equals("ORC")) {
+				g.setColor(Color.RED);
+			}
+			g.drawString("Okay okay I got it. Bye.", x, y);
+		} else if (state == 22) {
+			g.setColor(Color.BLACK);
+			g.drawString("*And so you set off on your adventure to slay a dragon!*", x, yi);
+			if (race.equals("HUMAN")) {
+				g.setColor(Color.ORANGE);
+			} else if (race.equals("ELF")) {
+				g.setColor(Color.GREEN);
+			} else if (race.equals("ORC")) {
+				g.setColor(Color.RED);
+			}
+			g.drawString("Cool.", x, y);
+		} else if (state == 23) {
+			g.setColor(Color.BLACK);
+			g.drawString(
+					"*As you left the tower you saw a villager lying on the ground with a knife through his chest*", x,
+					yi);
+			if (race.equals("HUMAN")) {
+				g.setColor(Color.ORANGE);
+			} else if (race.equals("ELF")) {
+				g.setColor(Color.GREEN);
+				if (magic == "LIFE") {
+					g.setColor(Color.GREEN);
+					g.drawString("LIVE INSECT!", x, y2);
+				}
+			} else if (race.equals("ORC")) {
+				g.setColor(Color.RED);
+			}
+			g.drawString("(-.-) that looks painful...", x, y);
+		} else if (state == 24) {
+			g.setColor(Color.RED);
+			g.drawString(
+					"*You revived the man, but he truned out to be a criminal and murders you with the very knife that you saved him from.*",
+					x, yi); // Ending 7
+		} else if (state == 25) {
+			g.setColor(Color.RED);
+			g.drawString("*You slowly back away feeling like a horribe person*", x, yi);
+			if (race.equals("HUMAN")) {
+				g.setColor(Color.ORANGE);
+			} else if (race.equals("ELF")) {
+				g.setColor(Color.GREEN);
+			} else if (race.equals("ORC")) {
+				g.setColor(Color.RED);
+			}
+			g.drawString("I'll get over it.", x, y);
+		} else if (state == 26) {
+			g.setColor(Color.BLACK);
+			g.drawString("*You hear a scream in the distance*", x, yi);
+			if (race.equals("HUMAN")) {
+				g.setColor(Color.ORANGE);
+			} else if (race.equals("ELF")) {
+				if (magic.equals("STEALTH")) {
+					g.setColor(Color.decode("#800080"));
+					g.drawString("*Go to sneak around and investigate*", x, y2);
+				}
+				g.setColor(Color.GREEN);
+			} else if (race.equals("ORC")) {
+				g.setColor(Color.RED);
+			}
+			g.drawString(
+					"This day just keeps getting worse and worse, I'm not in the mood to bother with that right now.",
+					x, y);
+		} else if (state == 27) {
+			g.setColor(Color.RED);
+			g.drawString(
+					"*You casn an invisibility spell and went to investigate, but once you got near the scene your spell wore off and you were spotted and killed.*",
+					x, yi);
+		} else if (state == 28) {
+			g.setColor(Color.BLACK);
+			g.drawString("*You moved on with your day*", x, yi);
 		}
 	}
 
@@ -347,7 +433,7 @@ public class YourAdventure extends JComponent implements MouseListener {
 			System.out.println("Race: " + race);
 		} else if (state == 3 && e.getX() >= 5 && e.getX() <= 40 && e.getY() >= 90 && e.getY() <= 105) {
 			state++;
-			race = "ORK";
+			race = "orc";
 			System.out.println("State: " + state);
 			System.out.println("Race: " + race);
 		} else if (state == 4 && eeCounter1 == 5 && e.getX() >= 5 && e.getX() <= 290 && e.getY() >= 65
@@ -395,19 +481,19 @@ public class YourAdventure extends JComponent implements MouseListener {
 			magic = "SUPPORT";
 			System.out.println("State: " + state);
 			System.out.println("Magic: " + magic);
-		} else if (state == 5 && race.equals("ORK") && e.getX() >= 5 && e.getX() <= 105 && e.getY() >= 40
+		} else if (state == 5 && race.equals("orc") && e.getX() >= 5 && e.getX() <= 105 && e.getY() >= 40
 				&& e.getY() <= 50) {
 			state++;
 			magic = "RESISTANCE";
 			System.out.println("State: " + state);
 			System.out.println("Magic: " + magic);
-		} else if (state == 5 && race.equals("ORK") && e.getX() >= 5 && e.getX() <= 125 && e.getY() >= 65
+		} else if (state == 5 && race.equals("orc") && e.getX() >= 5 && e.getX() <= 125 && e.getY() >= 65
 				&& e.getY() <= 80) {
 			state++;
 			magic = "ENHANCEMENT";
 			System.out.println("State: " + state);
 			System.out.println("Magic: " + magic);
-		} else if (state == 5 && race.equals("ORK") && e.getX() >= 5 && e.getX() <= 50 && e.getY() >= 90
+		} else if (state == 5 && race.equals("orc") && e.getX() >= 5 && e.getX() <= 50 && e.getY() >= 90
 				&& e.getY() <= 110) {
 			state++;
 			magic = "RAGE";
@@ -469,6 +555,31 @@ public class YourAdventure extends JComponent implements MouseListener {
 			state++;
 			System.out.println("State: " + state);
 		} else if (state == 19 && e.getX() >= 5 && e.getX() <= 610 && e.getY() >= 40 && e.getY() <= 60) {
+			state++;
+			System.out.println("State: " + state);
+		} else if (state == 20 && e.getX() >= 5 && e.getX() <= 615 && e.getY() >= 35 && e.getY() <= 60) {
+			state++;
+			System.out.println("State: " + state);
+		} else if (state == 21 && e.getX() >= 5 && e.getX() <= 250 && e.getY() >= 40 && e.getY() <= 60) {
+			state++;
+			System.out.println("State: " + state);
+		} else if (state == 22 && e.getX() >= 5 && e.getX() <= 60 && e.getY() >= 40 && e.getY() <= 60) {
+			state++;
+			System.out.println("State: " + state);
+		} else if (state == 23 && magic.equals("LIFE") && e.getX() >= 5 && e.getX() <= 150 && e.getY() >= 65
+				&& e.getY() <= 80) {
+			state++;
+			System.out.println("state: " + state);
+		} else if (state == 23 && e.getX() >= 5 && e.getX() <= 260 && e.getY() >= 40 && e.getY() <= 60) {
+			state = state + 2;
+			System.out.println("State: " + state);
+		} else if (state == 25 && e.getX() >= 5 && e.getX() <= 160 && e.getY() >= 40 && e.getY() <= 60) {
+			state++;
+			System.out.println("State: " + state);
+		} else if (state == 26 && e.getX() >= 5 && e.getX() <= 370 && e.getY() >= 60 && e.getY() <= 80) {
+			state++;
+			System.out.println("State: " + state);
+		} else if (state == 27 && e.getX() >= 5 && e.getX() <= 990 && e.getY() >= 40 && e.getY() <= 60) {
 			state++;
 			System.out.println("State: " + state);
 		}
